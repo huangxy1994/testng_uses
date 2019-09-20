@@ -1,10 +1,10 @@
 /**
- * @Description
+ * @Description 依赖单个方法
  * @Author 黄晓阳
  * @Date 2019-07-02 17:15
  */
 
-package com.example.context_uses;
+package com.example.dependency_uses;
 
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.AfterClass;
@@ -28,7 +28,7 @@ public class test_func1 {
         log.info("------------------afterClass");
     }
 
-    @Test(description = "func1组1接口", dependsOnGroups = {"test_3"})
+    @Test(description = "func1组1接口", dependsOnMethods = "test_3")
     public void test_1() {
         log.info("------------------test_1");
         assertFalse(false);
@@ -37,7 +37,7 @@ public class test_func1 {
     @Test(description = "func1组2接口")
     public void test_2() {
         log.info("------------------test_2");
-        assertEquals("1", "2", "response log");
+        assertEquals("difference message", "1", "2");
     }
 
     @Test(description = "func1组3接口")

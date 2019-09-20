@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="wgame接口测试" verbose="1">
+    <test name="wgame" preserve-order="true">
+        <classes>
+            <class name="com.example.dependency_uses.test_func1">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                </methods>
+            </class>
+            <class name="com.example.dependency_uses.test_func2">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                </methods>
+            </class>
+            <class name="com.example.dependency_uses.test_func3">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                    <include name="test_4"/>
+                </methods>
+            </class>
+            <class name="com.example.dependency_uses.test_func4">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                    <include name="test_4"/>
+                    <include name="test_5"/>
+                    <include name="test_6"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
