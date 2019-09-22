@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testng练习" verbose="1">
+    <test name="练习1" preserve-order="true">
+        <classes>
+            <class name="com.example.annotation_uses.Test3">
+                <methods>
+                    <include name="func1"/>
+                    <include name="func2"/>
+                </methods>
+            </class>
+            <class name="com.example.annotation_uses.Test4">
+                <methods>
+                    <include name="func1"/>
+                    <include name="func2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="练习2" preserve-order="true">
+        <classes>
+            <class name="com.example.annotation_uses.Test5">
+                <methods>
+                    <include name="func1"/>
+                    <include name="func2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

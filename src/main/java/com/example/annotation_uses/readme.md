@@ -1,0 +1,51 @@
+# 注解
+
+## 注释介绍
+
+- @BeforeSuite
+   - 对于套件测试，在此套件中所有测试运行前运行一次。
+- @AfterSuite
+   - 对于套件测试，在此套件中所有测试运行后运行一次。
+- @BrforeTest
+   - 对于套件测试，在运行属于<test>标签内的类的任何测试方法之前运行。
+- @AfterTest
+   - 对于套件测试，在运行属于<test>标签内的类的任何测试方法之后运行。
+- @BeforeClass
+   - 在调用当前类的第一个测试方法之前运行。
+- @AfterClass
+   - 在调用但前类的对后一个测试方法之后运行。
+- @BeforeGroups
+   - 在调用属于该组的第一个测试方法之前运行。
+- @AfterGroups
+   - 在调用属于该组的最后一个测试方法之后运行。
+- @BforeMethod
+   - 在每个测试方法之前运行一次。
+- @AfterMethod
+   - 在所有测试方法之后运行一次。
+- @DataProvider
+   - 标记一种方法为测试方法提供数据，注释方法必须返回一个Object[][]，其中每个Object[]可以被分配给测试方法的参数列表。
+   - 要从DataProvider接收数据的Test方法需要使用与此注释名相同的dataprovider名称。
+- @Factory
+   - 将一个方法标记为工厂，返回TestNg将被用作测试类的对象。该方法必须返回Object[]。
+- @Listeners
+   - 定义测试类上的监听器。
+- @Paramters
+   - 从xml中读取参数。
+- @Test
+   - 将类或者方法标记为测试的一部分。
+   
+## 使用方法
+1. 使用注解@Test、@BeforeClass、@AterClass、@BeforeMethod、@AfterMethod
+   - Test1
+2. 使用@BeforeGroups、@AfterGroups
+   - Test2
+3. 使用@BeforeSuite、@AfterSuite、@BeforeTest、@AfterTest
+   - Test3、Test4、Test5、testng.xml
+4. 使用@DataProvider
+   - Test6
+5. 使用@Factory
+   - Test7、testng2.xml
+6. 使用@Parameters
+   - Test8、testng3.xml
+7. 使用@Listeners
+   - Test9、IHookableImpl
