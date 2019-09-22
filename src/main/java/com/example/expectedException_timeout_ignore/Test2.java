@@ -1,4 +1,4 @@
-package com.example.expected_exception_uses;
+package com.example.expectedException_timeout_ignore;
 
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.Test;
