@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testng练习" verbose="1">
+    <test name="练习" preserve-order="true">
+        <groups>
+            <run>
+                <exclude name="group5"></exclude>
+                <include name="group6"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.group_uses.Test2" />
+            <class name="com.example.group_uses.Test3" />
+            <class name="com.example.group_uses.Test4" />
+            <class name="com.example.group_uses.Test5" />
+        </classes>
+    </test>
+</suite>
