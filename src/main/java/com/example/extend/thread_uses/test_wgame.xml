@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="wgame接口测试">
+    <listeners>
+        <listener class-name="com.example.extend.thread_uses.SetThreadCount"></listener>
+    </listeners>
+    <test name="wgame" preserve-order="true">
+        <classes>
+            <class name="com.example.extend.thread_uses.test_func1">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                </methods>
+            </class>
+            <class name="com.example.extend.thread_uses.test_func2">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

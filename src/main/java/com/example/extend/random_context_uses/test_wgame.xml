@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="wgame接口测试" verbose="1">
+    <listeners>
+        <listener class-name="com.example.extend.random_context_uses.TestOrderRandomizer"></listener>
+    </listeners>
+    <test name="login" preserve-order="true">
+        <classes>
+            <class name="com.example.extend.random_context_uses.test_func1">
+                <methods>
+                    <include name="test_1_1"/>
+                    <include name="test_1_2"/>
+                    <include name="test_1_3"/>
+                </methods>
+            </class>
+            <class name="com.example.extend.random_context_uses.test_func2"></class>
+        </classes>
+    </test>
+
+    <test name="shop" preserve-order="true">
+        <classes>
+            <class name="com.example.extend.random_context_uses.test_func1">
+                <methods>
+                    <include name="test_1_1"/>
+                    <include name="test_1_2"/>
+                    <include name="test_1_3"/>
+                </methods>
+            </class>
+            <class name="com.example.extend.random_context_uses.test_func3"></class>
+        </classes>
+    </test>
+</suite>

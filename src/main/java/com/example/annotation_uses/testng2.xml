@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="testng练习" verbose="1">
-    <test name="练习1" preserve-order="true" group-by-instances="true">
-        <classes>
-            <class name="com.example.annotation_uses.Test7">
-            </class>
-        </classes>
-    </test>
-</suite>

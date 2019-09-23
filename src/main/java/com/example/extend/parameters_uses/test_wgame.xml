@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="wgame接口测试" parallel="classes" thread-count="2">
+    <!--    <listeners>-->
+    <!--        <listener class-name="com.lilith.tools.my_testng.RetryListener" />-->
+    <!--    </listeners>-->
+    <test name="wgame" preserve-order="true">
+        <parameter name="parameter1" value="parameter"/>
+        <parameter name="parameter2" value="12"/>
+        <classes>
+            <class name="com.example.extend.parameters_uses.test_func1">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                </methods>
+            </class>
+            <class name="com.example.extend.parameters_uses.test_func2">
+                <methods>
+                    <include name="test_1"/>
+                    <include name="test_2"/>
+                    <include name="test_3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
